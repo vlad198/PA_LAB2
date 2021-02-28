@@ -55,7 +55,7 @@ public class Destination {
      * @param name name of the destination instantiated
      * @param demand demand of the destination instantiated
      */
-    Destination(String name, int demand) {
+    public Destination(String name, int demand) {
         this.name = name;
         this.demand = demand;
     }
@@ -63,7 +63,7 @@ public class Destination {
     /**
      * Default Constructor
      */
-    Destination() {
+    public Destination() {
         this.name = "DefaultDestinationName";
         this.demand = 0;
     }

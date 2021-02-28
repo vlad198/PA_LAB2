@@ -39,7 +39,7 @@ public class Problem {
      * @param destinations1 vector of destinations to be set
      * @param cost1 matrix of costs to be set
      */
-    Problem(Source[] sources1, Destination[] destinations1, int[][] cost1) {
+    public Problem(Source[] sources1, Destination[] destinations1, int[][] cost1) {
 
         if (sources1.length != cost1.length || destinations1.length != cost1[0].length) {
             System.out.println("Numarul de surse si destinatii nu corespunde cu matricea data");

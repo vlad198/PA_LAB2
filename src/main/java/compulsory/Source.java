@@ -72,7 +72,7 @@ public class Source {
      * @param type type of the source
      * @param supply supply of the source
      */
-    Source(String name, SourceType type, int supply) {
+    public Source(String name, SourceType type, int supply) {
         this.name = name;
         this.type = type;
         this.supply = supply;
@@ -81,7 +81,7 @@ public class Source {
     /**
      * Default constructor
      */
-    Source() {
+    public Source() {
         this.name = "DefaultSourceName";
         this.type = SourceType.FACTORY;
         this.supply = 0;
