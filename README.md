@@ -1,5 +1,3 @@
-# README
-
 # Advanced Programming - Lab 2
 
 This repository contains all the problems proposed for the second laboratory in Advanced Programming course
