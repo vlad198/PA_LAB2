@@ -1,14 +1,15 @@
-package optional;
+package optional.source;
 
-import compulsory.SourceType;
-
-import java.util.Objects;
-
-abstract class Source {
+public abstract class Source {
     protected String type;
     private int supply;
     private String name;
 
+    /**
+     * toString method overridden
+     *
+     * @return the string representation of the object
+     */
     @Override
     public String toString() {
         String result = "Name : " + this.name + "\n";
@@ -17,6 +18,12 @@ abstract class Source {
         return result;
     }
 
+    /**
+     * Indicates whether some other object is "equal to" this one.
+     *
+     * @param o the reference object with which to compare.
+     * @return true, if this object is the same as the object argument; false otherwise.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -27,53 +34,72 @@ abstract class Source {
 
 
     /**
-     * abstract method
-     * @param type
+     * abstract method for the type
      */
     public abstract void setType();
 
     /**
-     * @return
+     * getter for the type of the source
+     *
+     * @return returns the type of the source
      */
     public String getType() {
         return this.type;
     }
 
     /**
-     * @param name
+     * setter for the name of the source
+     *
+     * @param name the name to be set
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     * @return
+     * getter for the name of the source
+     *
+     * @return returns the name of the source
      */
     public String getName() {
         return this.name;
     }
 
     /**
-     * @param supply
+     * setter for the supply of the source instantiated
+     *
+     * @param supply the supply to be set
      */
     public void setSupply(int supply) {
         this.supply = supply;
     }
 
     /**
-     * @return
+     * getter for the supply of the source instantiated
+     *
+     * @return the supply of the source
      */
     public int getSupply() {
         return this.supply;
     }
 
-    Source(String name, String type, int supply) {
+    /**
+     * Constructor
+     *
+     * @param name   the name of the object instantiated
+     * @param type   the type of the object instantiated
+     * @param supply supply of the object instantiated
+     */
+    public Source(String name, String type, int supply) {
         this.name = name;
         this.type = type;
         this.supply = supply;
     }
 
-    Source() {
+    /**
+     * Default constructor
+     */
+    public Source() {
         this.name = "DefaultSourceName";
         this.type = "FACTORY";
         this.supply = 0;
