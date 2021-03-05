@@ -95,6 +95,21 @@ Output : this program outputs the details of the problem
 - [x] Implement a simple algorithm for creating a feasible solution to the problem (one that satisfies the supply and demand constraints).
 - [x] Write doc comments in your source code and generate the class documentation using javadoc.
 
+#### Example 1
+
+![](readme_images/bonus_ex_1_instanta.png)
+![](readme_images/optional_ex_1_result.png)
+
+#### Example 2
+
+![](readme_images/bonus_ex_2_instanta.png)
+![](readme_images/optional_ex_2_result.png)
+
+#### Example 3
+
+![](readme_images/bonus_ex_3_instanta.png)
+![](readme_images/optional_ex_3_result.png)
+
 ### Bonus
 
 - [x] Implement an algorithm in order to minimize the total cost, using either:
