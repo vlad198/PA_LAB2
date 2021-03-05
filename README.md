@@ -89,8 +89,38 @@ Output : this program outputs the details of the problem
 
 ### Optional
 
-To be continued...
+- [x] Override the equals method form the Object class for the Source, Destination classes. The problem should not allow adding the same source or destination twice.
+- [x] Instead of using an enum, create dedicated classes for warehouses and factories. Source will become abstract.
+- [x] Create a class to describe the solution.
+- [x] Implement a simple algorithm for creating a feasible solution to the problem (one that satisfies the supply and demand constraints).
+- [x] Write doc comments in your source code and generate the class documentation using javadoc.
 
 ### Bonus
 
-To be continued...
+- [x] Implement an algorithm in order to minimize the total cost, using either:
+  - an heuristic, for example the Vogel's approximation method
+  - an exact algorithm based on minimum cost network flows.
+  - your own idea (!?)
+
+- [x] Generate large random instances and analyze the performance of your algorithm (running times, memory consumption). Identify the hot-spots in your code.
+
+
+#### Random Problem
+
+![](readme_images/bonus_random_problem_instance.png)
+![](readme_images/bonus_random_problem_generation.png)
+
+#### EX 1
+![img.png](readme_images/bonus_ex_1_instanta.png)
+![](readme_images/bonus_ex_1_rezultat.png)
+
+#### EX 2
+
+![](readme_images/bonus_ex_2_instanta.png)
+![](readme_images/bonus_ex_2_rezultat.png)
+
+#### EX 3
+
+![](readme_images/bonus_ex_3_instanta.png)
+![](readme_images/bonus_ex_3_rezultat.png)
+
