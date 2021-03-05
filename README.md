@@ -125,17 +125,23 @@ Output : this program outputs the details of the problem
 ![](readme_images/bonus_random_problem_instance.png)
 ![](readme_images/bonus_random_problem_generation.png)
 
-#### EX 1
+#### Example 1
 ![img.png](readme_images/bonus_ex_1_instanta.png)
 ![](readme_images/bonus_ex_1_rezultat.png)
 
-#### EX 2
+#### Example 2
 
 ![](readme_images/bonus_ex_2_instanta.png)
 ![](readme_images/bonus_ex_2_rezultat.png)
 
-#### EX 3
+#### Example 3
 
 ![](readme_images/bonus_ex_3_instanta.png)
 ![](readme_images/bonus_ex_3_rezultat.png)
+
+## Resources
+
+https://www.geeksforgeeks.org/transportation-problem-set-4-vogels-approximation-method/
+https://businessjargons.com/vogels-approximation-method.html
+https://profs.info.uaic.ro/~acf/java/labs/lab_02.html
 
