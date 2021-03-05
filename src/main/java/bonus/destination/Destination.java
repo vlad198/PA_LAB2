@@ -11,7 +11,7 @@ public class Destination {
     @Override
     public String toString() {
         String result = "Name : " + this.name + "\n";
-        result += "Supply : " + this.demand + "\n";
+        result += "Demand : " + this.demand + "\n";
         return result;
     }
 

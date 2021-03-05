@@ -3,6 +3,7 @@ package bonus.problem;
 import bonus.destination.Destination;
 import bonus.solution.Solution;
 import bonus.solution.SolutionPair;
+import bonus.source.Factory;
 import bonus.source.Source;
 
 import java.util.Arrays;
@@ -128,6 +129,37 @@ public class Problem {
         this.sources = sources1;
         this.destinations = destinations1;
         this.cost = cost1;
+    }
+
+    public Problem() {
+        int numberOfSources, numberOfDestinations, totalCostSources = 0;
+        numberOfSources = (int) (Math.random() * 10) + 1;
+        numberOfDestinations = (int) (Math.random() * 10) + 1;
+
+        Source[] sources = new Source[numberOfSources];
+        Destination[] destinations = new Destination[numberOfDestinations];
+        int[][] cost = new int[numberOfSources][numberOfDestinations];
+
+        for (int i = 0; i < numberOfSources; i++) {
+            int randomSourceSupply = (int) (Math.random() * 100 + 10);
+            sources[i] = new Factory("s" + i, randomSourceSupply);
+            totalCostSources += randomSourceSupply;
+        }
+
+        for (int i = 0; i < numberOfDestinations - 1; i++) {
+            int randomDestinationDemand = (int) (Math.random() * (totalCostSources / 2) + 1);
+            totalCostSources -= randomDestinationDemand;
+            destinations[i] = new Destination("d" + i, randomDestinationDemand);
+        }
+        destinations[destinations.length - 1] = new Destination("d" + (destinations.length - 1), totalCostSources);
+
+        for (int i = 0; i < numberOfSources; i++)
+            for (int j = 0; j < numberOfDestinations; j++)
+                cost[i][j] = (int) (Math.random() * 10 + 1);
+
+        this.sources = sources;
+        this.destinations = destinations;
+        this.cost = cost;
     }
 
 
