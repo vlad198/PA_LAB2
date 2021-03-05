@@ -10,15 +10,16 @@ import optional.source.Warehouse;
 public class Main {
 
     public static void main(String[] args) {
-        Factory s1 = new Factory("s1", 10);
-        Warehouse s2 = new Warehouse("s2", 35);
-        Warehouse s3 = new Warehouse("s3", 25);
+        Factory o1 = new Factory("o1", 300);
+        Factory o2 = new Factory("o2", 400);
+        Factory o3 = new Factory("o3", 500);
 
-        Destination d1 = new Destination("d1", 20);
-        Destination d2 = new Destination("d2", 25);
-        Destination d3 = new Destination("d3", 25);
+        Destination d1 = new Destination("d1", 250);
+        Destination d2 = new Destination("d2", 350);
+        Destination d3 = new Destination("d3", 400);
+        Destination d4 = new Destination("d4", 200);
 
-        Problem p = new Problem(new Source[]{s1, s2, s3}, new Destination[]{d1, d2, d3}, new int[][]{{2, 3, 1}, {5, 4, 8}, {5, 6, 8}});
+        Problem p = new Problem(new Source[]{o1, o2, o3}, new Destination[]{d1, d2, d3, d4}, new int[][]{{3, 1, 7, 4}, {2, 6, 5, 9}, {8, 3, 3, 2}});
         Solution s = p.solveProblem();
 
         System.out.println(s);

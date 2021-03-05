@@ -155,6 +155,10 @@ public class Problem {
      * @param sources1 sources to be set
      */
     public void setSources(Source[] sources1) {
+        if (!noDuplicatesSources(sources1)) {
+            System.out.println("Ai introdus duplicate pentru surse");
+            System.exit(0);
+        }
         this.sources = sources1;
     }
 
@@ -173,6 +177,12 @@ public class Problem {
      * @param destinations1 destinations to be set
      */
     public void setDestinations(Destination[] destinations1) {
+
+        if (!noDuplicatesDestinations(destinations1)) {
+            System.out.println("Ai introdus duplicate pentru destinatii");
+            System.exit(0);
+        }
+
         this.destinations = destinations1;
     }
 
